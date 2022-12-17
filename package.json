@@ -7,6 +7,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "consumer": "node dist/rabbit-mq-consumer/consumer.js --watch",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -21,7 +22,11 @@
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
+    "@nestjs/microservices": "^9.2.1",
     "@nestjs/platform-express": "^9.0.0",
+    "@types/jsonwebtoken": "^8.5.9",
+    "amqp-connection-manager": "^4.1.9",
+    "amqplib": "^0.10.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.5"
   },
